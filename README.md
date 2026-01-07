@@ -33,6 +33,8 @@ The releases contain a compiled version of comlap and glomap.
 
 ### Prebuild Binaries
 
+*There are prebuild binaries on the release page now*
+
 Colmap can be installed via the [homebrew package manager](https://brew.sh/) on Mac and Linux
 [Colmap on Homebrew](https://formulae.brew.sh/formula/colmap)
 In my opinion this is the fastest way to set up colmap.
@@ -40,6 +42,8 @@ In my opinion this is the fastest way to set up colmap.
 Homebrew unfortunately reinstalls all dependencies need by colmap. What this mean is, you will have two instances of zlib, zstd, wayland and so on. This makes sense from the view of homebrew but is worth a consideration. On my system the homebrew folder grew to ~6gb, maybe I need to change something, but I couln'd find it easily.
 
 ### Building from Source
+
+There is a Dockerfile with an bash script for building the CUDA and non-CUDA variants of COLMAP in [this repo](https://github.com/Cron3x/Automatic-3D-Camera-Tracking-with-COLMAP/tree/main/docker-build)
 
 #### VCPKG
 
