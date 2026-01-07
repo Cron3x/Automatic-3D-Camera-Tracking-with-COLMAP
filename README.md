@@ -23,6 +23,23 @@ chmod -x <PATH-TO-SCRIPT>
 
 The releases contain a compiled version of comlap and glomap.
 
+## Usage
+
+| Argument | Description |
+|---|---|
+| -h | print this help |
+| -c | set the working to the level of the shell script instead of one folder above (./ instead of ../) |
+| -C | Set the COLMAP executable — **Default:** '../01 COLMAP/colmap' or '../01 COLMAP/bin/colmap' |
+| -F | Set the FFMPEG executable — **Default:** '../03 FFMPEG/ffmpeg' or '../03 FFMPEG/bin/ffmpeg' |
+| -V | Set the VIDEOS directory — **Default:** '../02 VIDEOS/' |
+| -S | Set the SCENES directory — **Default:** '../04 SCENES/' |
+| -j | Sets the amount of threads used by COLMAP — **Default:** -1 (Use as many as possible) |
+| -G | Use Glowmap as mapper |
+| -cpu | Use the CPU instead of GPU — **Default:** dependent on if the script could find CUDA |
+| -gpu | Force execution on GPU (CUDA). Use if you have it but the script does not find it. |
+| -img-size | Change the image size; can reduce RAM usage — **Default:** 4096 |
+| -libs | set LD_LIBRARY_PATH for the COLMAP executable |
+
 ## Import into Blender
 
 [Import-Point-Cloud-Addon by SBCV](https://github.com/SBCV/Blender-Import-Point-Cloud-Addon)
